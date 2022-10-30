@@ -274,8 +274,8 @@ nav {
 	border-radius: 4px;
 	padding: 12px 42px;
 }
-.form-area:focus-within {
-	border: 1px solid var(--acent-color);
+.form-area:focus {
+	border-color: var(--acent-color);
 }
 
 .label-name {
