@@ -63,7 +63,34 @@
 					вашого бізнесу
 				</h1>
 				<button type="button" class="button" data-modal-open>Замовити послугу</button>
-				<div class="backdrop is-hidden" data-modal><div class="modal"><button type="button" class="close-modal" data-modal-close><svg class="close-icon" width="30px" height="30px"><use href="./images/symbol-defs.svg#icon-close"></use></svg></button></div></div>
+				<div class="backdrop is-hidden" data-modal>
+					<div class="modal"><button type="button" class="close-modal" data-modal-close><svg class="close-icon" width="30px" height="30px"><use href="./images/symbol-defs.svg#icon-close"></use></svg></button>
+					<form name="order-service" autocomplete="off" class="form-container">
+						<b class="form-title">Залиште свої дані, ми вам передзвонимо</b>
+							<label class="form-label">
+								<span class="label-name">Ім'я</span>
+								<input type="text" name="name" class="form-area" />
+							</label>
+							<label class="form-label">
+								<span class="label-name">Телефон</span>
+								<input type="tel" name="phone-number" class="form-area" />
+							</label>
+							<label class="form-label">
+								<span class="label-name">Пошта</span>
+								<input type="email" name="email" class="form-area" />
+							</label>
+						<label class="form-label coment">
+							<span class="label-name">Коментар</span>
+							<textarea name="coment" rows="10" placeholder="Введіть текст" class="coment-form"></textarea>
+						</label>
+						<label class="label-check">
+							<input type="checkbox" name="checkbox" value="is-agree">
+							<span class="check-agree">Погоджуюся з розсилкою та приймаю <a href=""> Умови договору</a></span>
+						</label>
+						<button type="submit" class="sumbit-form">Відправити</button>
+					</form>
+					</div>
+				</div>
 			</section>
 
 			<section class="section features">

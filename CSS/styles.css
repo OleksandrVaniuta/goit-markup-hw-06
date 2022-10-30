@@ -208,8 +208,8 @@ nav {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%) scale(1);
-	width: 528px;
-	height: 581px;
+	width: 512px;
+	/* height: 581px; */
 	background-color: #ffffff;
 	justify-content: center;
 	align-items: center;
@@ -217,6 +217,9 @@ nav {
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-modal {
+	position: absolute;
+	top: 8px;
+	right: 8px;
 	display: flex;
 	margin-left: auto;
 	padding: 0;
@@ -244,6 +247,89 @@ nav {
 	transform: translate(-50%, -50%) scale(0.8);
 }
 
+/* FORM CSS*/
+.form-container {
+	width: 100%px;
+	padding: 32px;
+}
+.form-title {
+	display: block;
+	font-size: 20px;
+	font-weight: 700;
+	color: #212121;
+	line-height: 1.17;
+	letter-spacing: 0.03em;
+	text-align: center;
+	margin-bottom: 12px;
+}
+
+.form-label {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+.form-area {
+	display: block;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	padding: 12px 42px;
+}
+.form-area:focus-within {
+	border: 1px solid var(--acent-color);
+}
+
+.label-name {
+	margin-right: auto;
+	margin-bottom: 4px;
+	font-size: 14px;
+	color: #757575;
+	line-height: 1.16;
+	letter-spacing: 0.01em;
+}
+.coment-form {
+	resize: none;
+	padding: 12px 16px;
+	height: 120px;
+}
+.coment-form::placeholder {
+	font-size: 14px;
+	color: rgba(117, 117, 117, 0.5);
+	line-height: 1.16;
+	letter-spacing: 0.01em;
+}
+
+.label-check {
+	display: block;
+	margin-right: auto;
+	margin-top: 20px;
+}
+.check-agree {
+	font-size: 14px;
+	line-height: 1.71;
+	color: #757575;
+	letter-spacing: 0.03em;
+}
+.check-agree a {
+	font-size: 14px;
+	line-height: 1.71;
+	color: var(--acent-color);
+	letter-spacing: 0.03em;
+}
+.sumbit-form {
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.87;
+	letter-spacing: 0.06em;
+	padding: 10px 52px;
+	color: #ffffff;
+	background-color: var(--acent-color);
+	border-radius: 4px;
+	border-color: transparent;
+	cursor: pointer;
+}
 /* MAIN CSS (without hero) */
 .section.features {
 	padding-top: 94px;
